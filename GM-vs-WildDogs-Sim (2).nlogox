@@ -147,8 +147,20 @@ to setup-dogs
     ; Wild stronger
     set strength 8
 
-    ; ALL WHITE
-    set color white
+    ; FOREST
+    if biome = "forest" [
+      set color sky - 2
+    ]
+
+    ; MANGROVE
+    if biome = "mangrove" [
+      set color white
+    ]
+
+    ; SAVANNAH
+    if biome = "savannah" [
+      set color yellow + 2
+    ]
   ]
 
   ; -----------------------------------------
@@ -167,8 +179,20 @@ to setup-dogs
     ; GM weaker physically
     set strength 5
 
-    ; ALL WHITE
-    set color white
+    ; FOREST
+    if biome = "forest" [
+      set color blue - 4
+    ]
+
+    ; MANGROVE
+    if biome = "mangrove" [
+      set color gray
+    ]
+
+    ; SAVANNAH
+    if biome = "savannah" [
+      set color orange + 2
+    ]
   ]
 
 end
